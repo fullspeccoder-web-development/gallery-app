@@ -2,10 +2,13 @@
 
 .ImageList {
   @include displayFlex(column, none);
-  width: 50%;
+  width: 75%;
 
   .ImageList-header {
-    font-size: 64px;
+    font-size: 120px;
+    letter-spacing: 0.5rem;
+    font-family: Inspiration;
+    text-shadow: $normalShadow;
   }
   
   .ImageList-images {

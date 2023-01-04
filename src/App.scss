@@ -3,4 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  -webkit-box-shadow: inset 0px 0px 50px -5px #000000; 
+box-shadow: inset 0px 0px 50px -5px #000000;
 }

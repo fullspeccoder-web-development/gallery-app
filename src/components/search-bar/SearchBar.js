@@ -24,7 +24,11 @@ const SearchBar = ({ handleSubmit }) => {
         onChange={handleChange}
         value={searchField}
       />
-      <button type="submit">Submit</button>
+      <button type="submit">
+        <span id="searchIcon" className="material-symbols-outlined">
+          search
+        </span>
+      </button>
     </form>
   );
 };
