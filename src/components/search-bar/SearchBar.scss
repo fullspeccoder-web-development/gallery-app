@@ -1,0 +1,42 @@
+@use '../../variables.scss' as *;
+$noBorder: none;
+$btnPadding: 1em;
+$inputFontSize: 1.25em;
+$inputBorderRadius: 15px;
+
+.SearchBar {
+  width: 100%;
+  padding: 2em;
+
+  input {
+    margin: 0px;
+    width: 50%;
+    border: $noBorder;
+    border-bottom-left-radius: $inputBorderRadius;
+    border-top-left-radius: $inputBorderRadius;
+    border-right: 0.5px solid #9e9e9e;
+    padding: $btnPadding;
+    font-size: $inputFontSize;
+  box-shadow: $normalBoxShadow;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    padding: $btnPadding;
+    margin: 0px;
+    border: $noBorder;
+    font-size: $inputFontSize;
+    background-color: #dfdfdf;
+    border-top-right-radius: $inputBorderRadius;
+    border-bottom-right-radius: $inputBorderRadius;
+  box-shadow: $normalBoxShadow;
+
+    &:hover {
+      cursor: pointer;
+      background-color:#9e9e9e;
+    }
+  }
+}

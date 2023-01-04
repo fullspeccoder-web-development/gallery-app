@@ -1,14 +1,13 @@
-@mixin displayFlex($direction, $wrap) {
-  display: flex;
-  flex-direction: $direction;
-  flex-wrap: $wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
+@use '../../variables.scss' as *;
 
 .ImageList {
   @include displayFlex(column, none);
+  width: 50%;
 
+  .ImageList-header {
+    font-size: 64px;
+  }
+  
   .ImageList-images {
     @include displayFlex(row, wrap);
   }

@@ -1,8 +1,10 @@
-$box: 20%;
+@use '../../variables.scss' as *;
+$boxSize: 20%;
 
 .Image {
-  width: $box;
-  height: $box;
+  width: $boxSize;
+  height: $boxSize;
   margin: 2em 1em;
   border: 0.5em inset #6a6a6a;
+  box-shadow: $normalBoxShadow;
 }

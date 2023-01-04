@@ -24,6 +24,7 @@ const ImageList = () => {
 
   return (
     <div className="ImageList">
+      <h1 className="ImageList-header">My Gallery</h1>
       <SearchBar handleSubmit={handleSubmit} />
       <div className="ImageList-images">{imageElements}</div>
     </div>
