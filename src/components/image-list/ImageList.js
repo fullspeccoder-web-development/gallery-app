@@ -4,6 +4,8 @@ import { v4 } from "uuid";
 import SearchBar from "../search-bar/SearchBar";
 import Image from "../image/Image";
 
+import "./ImageList.scss";
+
 import { getData } from "../../data";
 
 const ImageList = () => {
@@ -21,9 +23,9 @@ const ImageList = () => {
   const imageElements = images.map((image) => <Image key={v4()} {...image} />);
 
   return (
-    <div>
+    <div className="ImageList">
       <SearchBar handleSubmit={handleSubmit} />
-      <div>{imageElements}</div>
+      <div className="ImageList-images">{imageElements}</div>
     </div>
   );
 };
